@@ -1,0 +1,27 @@
+{
+  "description": "Arms HANDOFF.md as the context fills (Stop) and reads it into the next session (SessionStart).",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/context_watch.py\" || python \"${CLAUDE_PLUGIN_ROOT}/scripts/context_watch.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/handoff_load.py\" || python \"${CLAUDE_PLUGIN_ROOT}/scripts/handoff_load.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
