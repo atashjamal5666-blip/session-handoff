@@ -7,6 +7,17 @@
     "name": "Atash Jamalluddin",
     "url": "https://aj.atashjamalluddin.com"
   },
+  "homepage": "https://github.com/atashjamal5666-blip/session-handoff",
+  "repository": "https://github.com/atashjamal5666-blip/session-handoff",
+  "documentationUrl": "https://github.com/atashjamal5666-blip/session-handoff#readme",
+  "supportUrl": "https://github.com/atashjamal5666-blip/session-handoff/issues",
+  "privacyPolicyUrl": "https://github.com/atashjamal5666-blip/session-handoff/blob/main/PRIVACY.md",
   "license": "MIT",
-  "keywords": ["handoff", "context", "session", "hooks", "cost"]
+  "keywords": [
+    "handoff",
+    "context",
+    "session",
+    "hooks",
+    "cost"
+  ]
 }
