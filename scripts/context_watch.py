@@ -61,7 +61,7 @@ def window(used):
 
 
 def state_file(session_id):
-    base = os.path.join(os.path.expanduser("~"), ".claude", "session-handoff")
+    base = os.path.join(os.path.expanduser("~"), ".claude", "lean-handoff")
     try:
         os.makedirs(base, exist_ok=True)
     except OSError:

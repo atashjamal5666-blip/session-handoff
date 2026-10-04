@@ -1,4 +1,4 @@
-# session-handoff
+# lean-handoff
 
 Every turn of a Claude Code session re-reads the whole conversation. At 400k tokens a
 simple "ok, continue" costs about ten times what it did at the start. Long sessions get
@@ -19,7 +19,7 @@ different), never at a number.
 ## Install
 
 ```
-/plugin install session-handoff
+/plugin install lean-handoff
 ```
 
 Needs Python 3 on the PATH (`python3` or `python`). No dependencies, no network.
@@ -29,7 +29,7 @@ Needs Python 3 on the PATH (`python3` or `python`). No dependencies, no network.
 - `CLAUDE_CONTEXT_WINDOW`: the window size in tokens. Without it the hook assumes 200k,
   and switches to 1M as soon as a turn goes past 200k.
 - Home and temp folders are skipped: no project there, nowhere to put a handoff.
-- State (which band already fired, per session) lives in `~/.claude/session-handoff/`.
+- State (which band already fired, per session) lives in `~/.claude/lean-handoff/`.
 
 ## Why
 

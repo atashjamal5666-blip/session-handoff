@@ -1,6 +1,7 @@
 {
-  "name": "session-handoff",
+  "name": "lean-handoff",
   "version": "1.0.0",
+  "icon": ".claude-plugin/icon.png",
   "description": "Hand a long session over to a fresh one before it gets expensive. At 40/70/85% of the context window Claude writes a 2 KB HANDOFF.md (DONE, NEXT, BLOCKED, FILES) and keeps working; the next session in that folder starts with it already read. No model calls, no network, two small Python files.",
   "author": {
     "name": "Atash Jamalluddin",
